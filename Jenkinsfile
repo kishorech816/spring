@@ -9,7 +9,7 @@ pipeline {
                 stage('Compile & build') {
             //agent { label 'master'}
                     steps {
-                    bat label: '', script: 'mvn --version'
+                    bat label: '', script: 'mvn clean'
                     //sh 'mvn clean package'
                     //stash name:"war", includes:"*/*.war"
             }
